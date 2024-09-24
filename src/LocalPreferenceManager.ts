@@ -76,7 +76,7 @@ export class LocalPreferenceManager {
         return {
             ...(prefConfig ? prefConfig : {}),
             ...pref,
-            defaultValue: prefConfig?.defaultValue ?? pref.value, // Ensure defaultValue is always set
+            defaultValue: (prefConfig?.defaultValue ?? pref.value), // Ensure defaultValue is always set
             set: (value: any) => {
                 pref.value = value;
                 pref.updatedAt = Date.now();

@@ -1,6 +1,6 @@
 {
   "name": "react-local-serialization",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/cjs/src/index.js",
   "module": "dist/esm/src/index.js",
   "types": "dist/types/src/index.d.ts",
@@ -14,6 +14,7 @@
     "clean:modules": "rm -rf ./node_modules && rm -rf ./demo/node_modules && rm -rf ./package-lock.json && rm -rf ./demo/package-lock.json",
     "clean:dist": "rm -rf dist",
     "clean:all": "npm run clean:modules && npm run clean:dist",
+    "clean": "npm run clean:dist",
     "install:fresh": "npm run clean:all && npm install",
     "build": "npm run build:cjs && npm run build:esm",
     "prepack": "npm run clean && npm run build"

@@ -30,14 +30,6 @@ export const useLocalPreference = (prefs: PreferenceIdentifier[]) => {
         setPrefsLoaded(true);
     }
 
-    // useEffect(() => {
-    //     return () => {
-    //         for (let listener of listeners) {
-    //             LocalPreferenceManager.unregisterListener(listener);
-    //         }
-    //     };
-    // });
-
     const resolvedPrefMap: ResolvedPreferenceMap = (prefsLoaded ? resolvedPrefs : prefArr).reduce((acc, pref) => {
         return {
             ...acc,
