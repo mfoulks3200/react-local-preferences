@@ -18,7 +18,8 @@
     "react-dom": "^18.3.1",
     "react-syntax-highlighter": "^15.5.0",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "react-local-serialization": "file:../"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
